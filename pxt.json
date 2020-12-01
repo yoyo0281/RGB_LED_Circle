@@ -1,11 +1,12 @@
 {
-    "name": "rgb_led_circle",
+    "name": "moon_car_rgb_led_circle",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "mooncar": "github:icshopmgr/mooncar#01c332d1866a41b8bb0ba00a446e321cb1f6c88b"
     },
     "files": [
         "README.md",

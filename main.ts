@@ -1,6 +1,6 @@
 let n = ""
 let m = ""
-let list = [0, 1, 2, 3, 4, 5, 6, 7]
+let strip = neopixel.create(DigitalPin.P12, 8, NeoPixelMode.RGB)
 let text_list = ["0", "1", "2", "3", "4", "5", "6", "7"]
 basic.forever(function () {
     m = ""
@@ -16,11 +16,12 @@ basic.forever(function () {
             n = text_list[index + 1]
         }
     }
-    for (let index = 0; index <= text_list.length - 1; index++) {
-        basic.showString("" + (text_list[index]))
-        basic.pause(10)
-    }
-    basic.showIcon(IconNames.Heart)
-    basic.pause(100)
-    basic.showIcon(IconNames.SmallHeart)
+    strip.setPixelColor(parseFloat(text_list[0]), neopixel.colors(NeoPixelColors.Red))
+    strip.setPixelColor(parseFloat(text_list[1]), neopixel.colors(NeoPixelColors.Orange))
+    strip.setPixelColor(parseFloat(text_list[2]), neopixel.colors(NeoPixelColors.Yellow))
+    strip.setPixelColor(parseFloat(text_list[3]), neopixel.colors(NeoPixelColors.Green))
+    strip.setPixelColor(parseFloat(text_list[4]), neopixel.colors(NeoPixelColors.Blue))
+    strip.setPixelColor(parseFloat(text_list[5]), neopixel.colors(NeoPixelColors.Indigo))
+    strip.setPixelColor(parseFloat(text_list[6]), neopixel.colors(NeoPixelColors.Purple))
+    strip.setPixelColor(parseFloat(text_list[7]), neopixel.colors(NeoPixelColors.White))
 })
