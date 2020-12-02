@@ -1,11 +1,13 @@
 {
-    "name": "rgb_led_circle",
+    "name": "number_circle",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "ezstartkit": "github:icshopmgr/ez_start_kit_for_makecode#edcee5dee1df5c7d4b3fe74d7ef713dac70928ae",
+        "mooncar": "github:icshopmgr/mooncar#01c332d1866a41b8bb0ba00a446e321cb1f6c88b"
     },
     "files": [
         "README.md",
